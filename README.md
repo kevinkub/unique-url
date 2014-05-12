@@ -25,11 +25,11 @@ take a little longer (o(n^2)) the longer the string gets.
     // new UniqueUrl(int stringLength[, int recursionFactor])
     $uniqueUrl = new UniqueUrl(4[, 111]);
 
-The class comes with a default recursion of n^2 * 111. However if you want to
+The class comes with a default recursion of **n^2 * 111**. However if you want to
 have a custom "rythm" in your codes you should change this value. A lower value
 will give you results, that are closer to each other (AA, AB, AC, ...). A higher
 value gives you more spreaded results but takes more computation time. However
-111 has been a good value in all of my tests.
+*111* has been a good value in all of my tests.
 
 ### Encoding numbers
 
@@ -47,6 +47,6 @@ To decode a string back to the number which was encoded use the `decode()` funct
 ### Limits
 
 Depending on the string length you choose, the numbers you can encode are limited
-too. You can encode any number between 0 and *64^n - 1*.
-PHP seems to limit the combinations to 64^10. I have not investigated into this any further,
-but if you need to use this algorithm on numbers larger than 1,1529215e18-1 ... man you have other problems.
+too. You can encode any number between **0** and **64^n - 1**.
+PHP seems to limit the combinations to **64^10**. I have not investigated into this any further,
+but if you need to use this algorithm on numbers larger than *1,1529215e18-1* ... man you have other problems.
