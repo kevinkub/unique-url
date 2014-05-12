@@ -43,3 +43,10 @@ to strings and back. To do so, simply call `encode()`.
 To decode a string back to the number which was encoded use the `decode()` function.
 
     $uniqueUrl->decode('A0-j'); // returns 12;
+
+### Limits
+
+Depending on the string length you choose, the numbers you can encode are limited
+too. You can encode any number between 0 and *64^n - 1*.
+PHP seems to limit the combinations to 64^10. I have not investigated into this any further,
+but if you need to use this algorithm on numbers larger than 1,1529215e18-1 ... man you have other problems.
